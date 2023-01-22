@@ -20,10 +20,7 @@ double areaCalc(double length, double width) {
 }
 
 int main() {
-    double length; 
-    double width;
-    double area;
-    double perimeter;
+    double length, width, area, perimeter;
     cout << "Please enter the length of the rectangle:" << endl;
     cin >> length;
     cout << "Please enter the width: " << endl;

@@ -1,16 +1,19 @@
 #include <iostream>
 using namespace std;
 
+
+// I don't know what else to write down for this lesson. Just messing with const and type conversion implicit/explicit.
+
 int main () {
     int one = 1;
     int two = 2;
-    double three = 3.001;
-    std::cout << one << endl;
-    std::cout << two << endl;
-    std::cout << three << endl; 
+    const double three = 3.001;
+    cout << one << endl;
+    cout << two << endl;
+    cout << three << endl; 
     double four = three + one;
-    std::cout << four << endl;
+    cout << four << endl;
     double five = three + two;
-    std::cout << five << endl;
-    std::cout << static_cast<double>(two) + 1.001;
+    cout << five << endl;
+    cout << static_cast<double>(two) + 1.001;
 }

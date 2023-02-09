@@ -1,0 +1,13 @@
+Samantha 168.5 46
+double dec = 2.7;
+int num = 45;
+string str = "**";
+
+// a
+Samantha 168.5 46
+
+// b 
+Samantha .5 168
+
+// c 
+dec = failure so none of the outputs have value

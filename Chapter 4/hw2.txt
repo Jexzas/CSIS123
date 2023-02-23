@@ -1,0 +1,13 @@
+// int x, y, z
+// x = 13
+// y = 45
+// z = 20
+
+// A: !(x - y <= 10)
+False
+// B: x + y > 10 || z < 15
+True
+// C: (x != y) && (x <= z)
+True
+// D: (y - x >= z) || (2 * z <= y - x)
+True 

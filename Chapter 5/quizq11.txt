@@ -1,0 +1,2 @@
+OUTPUT:
+"i = 5 and num = 48"

@@ -1,0 +1,11 @@
+char ch = 'D';
+while ('A' <= ch && ch <= 'Z') {
+    ch = static_cast<char>(static_cast<int>(ch)+1);
+}
+
+Turn 1: 
+    ch = 'E';
+Turn 2: 
+    ch = 'F';
+
+Loop will continue until ch = 'Z'

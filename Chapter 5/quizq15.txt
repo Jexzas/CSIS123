@@ -1,0 +1,39 @@
+input: 0 0 8 12 50 7 13 -1
+
+int num, sum, count;
+cin >> sum;
+cin >> count; 
+cin >> num;
+while(count <= 5) {
+    sum = sum + num;
+    count++
+    cin >> num;
+}
+cout << "Sum = " << sum << endl;
+
+Turn 1: 
+    sum = 0 count = 0 num = 8
+    OUTPUT: Sum = 8
+Turn 2:
+    sum = 8 count = 1 num = 12
+    OUTPUT: Sum = 20
+Turn 3:
+    sum = 20 count = 2 num = 50
+    OUTPUT: Sum = 70
+Turn 4:
+    sum = 70 count = 3 num = 7
+    OUTPUT: Sum = 77
+Turn 5: 
+    sum = 77 count = 4 num = 13
+    OUTPUT: sum = 90
+Turn 6: 
+    sum = 90 count = 5 num = -1
+    OUTPUT: sum = 89
+
+Result: 
+"Sum = 8"
+"Sum = 20"
+"Sum = 70"
+"Sum = 77"
+"Sum = 90"
+"Sum = 89"

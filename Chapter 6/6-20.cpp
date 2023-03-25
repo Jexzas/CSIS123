@@ -7,61 +7,55 @@ using namespace std;
 
 
   //Function prototypes
-void initialize(int& zeroCount, int&oddCount, int& evenCount);
-void getNumber(int& num);
-void classifyNumber(int num, int& zeroCount, int& oddCount, int& evenCount);
-void printResults(int zeroCount, int oddCount, int evenCount);
+void initialize(int&, double&);
+void printResults(double avg, int sum);
 
 int main ()
 {
-  int counter = 0;
+  ifstream fin;
+  ofstream fout;
+  int counter = 1;
   int number;
-  int zeros;
-  int odds;
-  int evens;
-
-  initialize(zeros, odds, evens);
+  int sum;
+  double avg;
+  
+  fin.open("Ch6_Ex20Data.txt");
+  fout.open("Ch6_Ex20Out.txt");
+  initialize(sum, avg);
   
   while (true) {
-    getNumber(number);
-    cout << number << " ";
+    fin >> number;
+    fout << number << " ";
     if (counter % 10 == 0) {
-        cout << endl;
+        fout << endl;
     }
+    sum += number;
     counter++;
-    classifyNumber(number, zeros, odds, evens);
-  }
-
-    return 0;
-}
-
-void initialize(int& zeroCount, int& oddCount, int&evenCount) {
-  zeroCount = 0;
-  oddCount = 0;
-  evenCount = 0;
-}
-
-void getNumber(int& num) {
-  cin >> num;
-}
-
-void classifyNumber(int num, int& zeroCount, int& oddCount, int& evenCount) {
-  switch (num % 2) {
-    case 0:
-      evenCount++;
-      if (num == 0)
-        zeroCount++;
+    if (fin.peek() == EOF) {
       break;
-    case 1: 
-    case -1:
-      oddCount++;
+    }
   }
+  avg = sum / counter;
+  fout << endl;
 
+  printResults(avg, sum);
+  fin.close();
+  fout.close();
+  return 0;
 }
 
-void printResults(int zeroCount, int oddCount, int evenCount) {
-  cout << "There are " << evenCount << " evens, " << "which includes " << zeroCount << " zeros" << endl;
-  cout << "The number of odd numbers is: " << oddCount << endl;
+void initialize(int& sum, double& avg) {
+  avg = 0;
+  sum = 0;
+}
+
+
+
+void printResults(double avg, int sum) {
+  ofstream fout;
+  fout.open("Ch6_Ex20Out.txt", ios::app);
+  fout << "The average of the given numbers is: " << avg << endl;
+  fout << "The sum of them is: " << sum << endl;
 } 
 
 

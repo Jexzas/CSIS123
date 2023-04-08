@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+//a:
+enum flowerType{ROSE, DAISY, CARNATION, FREESIA, GARDENIA, ALLIUM, TULIP, IRIS, SUNFLOWER, LILAC, ORCHID};
+
+int main () {
+    //b:
+    flowerType flower;
+    //c:
+    flower = TULIP;
+    //D:
+    flower = IRIS;
+    //E:
+    flower = static_cast<flowerType>(static_cast<int>(flower) - 1);
+    //F:
+    cout << flower << endl;
+    //G:
+    int input;
+    cout << "Enter a number between 0 and 9 to choose a flower: " << endl;
+    cin >> input;
+    flower = static_cast<flowerType>(input);
+
+}

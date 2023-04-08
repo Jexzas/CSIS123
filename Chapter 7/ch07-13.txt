@@ -1,0 +1,5 @@
+A: 4
+B: GRAPE
+C: MANGO
+D: true
+E: The syntax of this is hard to decypher. I don't think it would compile.

@@ -1,0 +1,17 @@
+A.
+Correct
+B. 
+Incorrect. Array cannot be of length zero.
+int testScores[1];
+C. 
+Correct
+D.
+Incorrect. Length cannot be a range
+int list100[99];
+E.
+Incorrect. Length cannot be specified on the type.
+double gpa[50];
+F.
+Correct, because LENGTH is declared as a constant, LENGTH-1 should evaluate to 25 before the array is declared.
+G. 
+Correct, because SIZE is a constant.

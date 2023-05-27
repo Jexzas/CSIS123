@@ -1,0 +1,14 @@
+A. 
+Valid.
+B. 
+Invalid, because you cannot pluralize string.
+C.
+Invalid, no length is given.
+D.
+Invalid because the length is given before the name and no type is declared. Also the brackets are empty where they should have the length, and -50 is not a valid length.
+E.
+Valid.
+F. 
+Invalid, because SIZE is not declared constant.
+G.
+Also invalid because MAX_SIZE is not a constant.
